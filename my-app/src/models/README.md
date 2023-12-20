@@ -1,0 +1,1 @@
+Objects that store attributes e.g. User

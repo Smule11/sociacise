@@ -1,0 +1,1 @@
+Parts that make up a page/view
