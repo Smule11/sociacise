@@ -1,0 +1,3 @@
+Definition: Views represent the UI components that are directly associated with the display or presentation layer of the application.
+Purpose: In MVC (Model-View-Controller) and similar architectures, views are responsible for how the data is presented to the user. They are often bound to models for dynamic data rendering.
+Example: A webpage displaying a list of blog posts, where the blog post data is fetched from a model.
