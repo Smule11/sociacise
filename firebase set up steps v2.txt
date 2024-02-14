@@ -122,14 +122,25 @@ Note: Configure firebase.json to define hosting behavior, such as rewrites for a
 
 4. Local Development
 
+SAM
 (start the emulators)
 >>> d:
->>> cd "Users\sllan\Documents\Personal_Projects\button auto diary\button-logger-react-pwa"
+>>> cd "Users\sllan\Documents\Personal_Projects\Social Physical\sociacise\my-app"
 >>> npm start
 
 (loads website locally)
 >>> d:
->>> cd "Users\sllan\Documents\Personal_Projects\button auto diary\button-logger-react-pwa"
+>>> cd "Users\sllan\Documents\Personal_Projects\Social Physical\sociacise\my-app"
+>>> firebase emulators:start
+
+MORGAN
+>>> d:
+>>> cd FILEPATH
+>>> npm start
+
+(loads website locally)
+>>> d:
+>>> cd FILEPATH
 >>> firebase emulators:start
 
 Note: Ensure firebaseConfig.js includes local pointers for Firestore, Authentication, etc. Enable authentication in the Firebase console.
