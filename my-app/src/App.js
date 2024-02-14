@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import { onAuthStateChanged } from 'firebase/auth';
-import { auth } from './services/firebaseConfig';
+import { auth } from './firebaseConfig';
 import { AuthContext, useAuth } from './components/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
-import Home from './views/Home';
-import ActivityDetails from './views/ActivityDetails';
-import Ladder from './views/Ladder';
-import Profile from './views/Profile';
-import Trends from './views/Trends';
-import FriendsFeed from './views/FriendsFeed';
+// import Home from './views/Home';
+// import ActivityDetails from './views/ActivityDetails';
+// import Ladder from './views/Ladder';
+// import Profile from './views/Profile';
+// import Trends from './views/Trends';
+// import FriendsFeed from './views/FriendsFeed';
 import Authentication from './views/Authentication';
-import ProfileSetup from './views/ProfileSetup';
+// import ProfileSetup from './views/ProfileSetup';
 
 function AuthWrapper({ children }) {
   const [loading, setLoading] = useState(true);
@@ -91,15 +91,15 @@ const App = () => {
         <AuthWrapper>
           <Routes>
             <Route path="/" element={<ProtectedRoute />}> {/* Use "/" for the home path */}
-              <Route index element={<Home />} /> {/* Use index prop for the default route */}
-              <Route path="/activity-details" element={<ActivityDetails />} />
+              {/* <Route index element={<Home />} /> Use index prop for the default route */}
+              {/* <Route path="/activity-details" element={<ActivityDetails />} />
               <Route path="ladder" element={<Ladder />} />
               <Route path="profile" element={<Profile />} />
               <Route path="trends" element={<Trends />} />
-              <Route path="friends-feed" element={<FriendsFeed />} />
+              <Route path="friends-feed" element={<FriendsFeed />} /> */}
             </Route>
             <Route path="auth" element={<Authentication />} />
-            <Route path="profile-setup" element={<ProfileSetup />} />
+            {/* <Route path="profile-setup" element={<ProfileSetup />} /> */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </AuthWrapper>

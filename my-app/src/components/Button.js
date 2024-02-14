@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './App.css'; // Assuming you'll have a separate CSS file for styling
+import '../App.css'; // Assuming you'll have a separate CSS file for styling
 
 const Button = ({ onClick, label, type, className }) => {
     return (
