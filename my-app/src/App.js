@@ -4,7 +4,8 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebaseConfig';
 import { AuthContext, useAuth } from './components/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
-// import Home from './views/Home';
+import Home from './views/Home';
+
 // import ActivityDetails from './views/ActivityDetails';
 // import Ladder from './views/Ladder';
 // import Profile from './views/Profile';
@@ -91,7 +92,7 @@ const App = () => {
         <AuthWrapper>
           <Routes>
             <Route path="/" element={<ProtectedRoute />}> {/* Use "/" for the home path */}
-              {/* <Route index element={<Home />} /> Use index prop for the default route */}
+              <Route index element={<Home />} /> {/* Use index prop for the default route */}
               {/* <Route path="/activity-details" element={<ActivityDetails />} />
               <Route path="ladder" element={<Ladder />} />
               <Route path="profile" element={<Profile />} />
