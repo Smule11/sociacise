@@ -123,22 +123,23 @@ Note: Configure firebase.json to define hosting behavior, such as rewrites for a
 4. Local Development
 
 SAM
-(start the emulators)
+(loads website locally)
 >>> d:
 >>> cd "Users\sllan\Documents\Personal_Projects\Social Physical\sociacise\my-app"
 >>> npm start
 
-(loads website locally)
+(start the emulators)
 >>> d:
 >>> cd "Users\sllan\Documents\Personal_Projects\Social Physical\sociacise\my-app"
 >>> firebase emulators:start
 
 MORGAN
+(loads website locally)
 >>> d:
 >>> cd FILEPATH
 >>> npm start
 
-(loads website locally)
+(start the emulators)
 >>> d:
 >>> cd FILEPATH
 >>> firebase emulators:start
