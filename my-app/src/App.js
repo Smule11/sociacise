@@ -4,7 +4,7 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebaseConfig';
 import { AuthContext, useAuth } from './components/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
-import Home from './views/Home';
+import Home from './views/Home_google';
 
 // import ActivityDetails from './views/ActivityDetails';
 // import Ladder from './views/Ladder';
